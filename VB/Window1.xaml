@@ -1,0 +1,27 @@
+﻿<Window x:Class="MultiValueConverter.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+	xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+    xmlns:local="clr-namespace:MultiValueConverter"
+    Title="Window1" Height="300" Width="550" >
+	<DockPanel>
+		<dxg:GridControl x:Name="grid1">
+			<dxg:GridControl.Columns>
+				<dxg:GridColumn FieldName="Item"/>
+				<dxg:GridColumn FieldName="Price"/>
+				<dxg:GridColumn FieldName="Quantity"/>
+                <dxg:GridColumn Header="Total">
+                    <dxg:GridColumn.Binding>
+                        <MultiBinding Converter="{local:MyConverter}">
+                            <Binding Path="Data.Price" RelativeSource="{RelativeSource Self}"/>
+                            <Binding Path="Data.Quantity" RelativeSource="{RelativeSource Self}"/>
+                        </MultiBinding>
+                    </dxg:GridColumn.Binding>
+                </dxg:GridColumn>
+			</dxg:GridControl.Columns>
+		</dxg:GridControl>
+	</DockPanel>
+</Window>
+
