@@ -9,8 +9,6 @@
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E954
 
-
-Imports Microsoft.VisualBasic
 Imports System.Reflection
 Imports System.Resources
 Imports System.Runtime.CompilerServices
@@ -44,10 +42,6 @@ Imports System.Windows
 '[assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]
 
 
-	'(used if a resource is not found in the page, 
-	' or application resource dictionaries)
-	'(used if a resource is not found in the page, 
-	' app, or any theme specific resource dictionaries)
 <Assembly: ThemeInfo(ResourceDictionaryLocation.None, ResourceDictionaryLocation.SourceAssembly)>
 
 
