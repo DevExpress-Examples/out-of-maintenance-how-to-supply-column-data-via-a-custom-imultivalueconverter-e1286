@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2012
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MultiValueConverter", "MultiValueConverter.vbproj", "{3E3C11F4-F718-46D0-A0EE-3630DB2C8925}"
+# Visual Studio 16
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MultiValueConverter", "MultiValueConverter.Net5.vbproj", "{3E3C11F4-F718-46D0-A0EE-3630DB2C8925}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
